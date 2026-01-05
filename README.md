@@ -28,26 +28,24 @@ This is a hands-on, notebook-first repository intended for learners who want to 
 ## Goals
 - Implement a small neural network (MLP) from first principles (vectorized NumPy).
 - Implement the same model using PyTorch and compare code clarity and performance.
-- Visualize training dynamics (loss/accuracy curves), weight evolution, and decision boundaries for simple datasets.
 - Serve as a teaching resource outlining both the math and the code.
 
 ## What you'll find in this repository
 - Jupyter notebooks (main content) that:
   - Build a neural network from scratch: forward pass, backward pass, parameter updates.
   - Re-implement the model using PyTorch's `nn` API and `autograd`.
-  - Train and evaluate on simple datasets (e.g., synthetic classification datasets, MNIST subset if included).
-- Visualizations of training curves and decision boundaries.
+  - Train and evaluate on simple datasets/ linear function -> y=2x
 - Explanations and inline commentary in the notebooks describing the math and rationale for implementation choices.
 
 > Note: This repository is notebook-focused (Jupyter Notebook). Open the notebooks to read explanations and run the cells interactively.
 
 ## Mathematical / conceptual summary
 The notebooks explain the following concepts and how they map to code:
-- Feedforward neural networks (dense layers)
-- Activation functions (Sigmoid, ReLU, Softmax)
-- Loss functions (Mean Squared Error, Cross-Entropy)
+- Feedforward neural networks (dense layers - 5 hidden layers) 
+- Activation functions (ReLU)
+- Loss functions (Mean Squared Error)
 - Backpropagation: computing gradients of loss w.r.t. weights and biases
-- Gradient-based optimization (SGD, mini-batch updates)
+- Gradient-based optimization (SGD)
 - Weight initialization, regularization basics, and learning rate effects
 - The difference between manual gradient computation and automatic differentiation (PyTorch)
 
@@ -56,22 +54,18 @@ A suggested minimal environment:
 - Python 3.8+
 - Jupyter / JupyterLab
 - numpy
-- matplotlib
-- scikit-learn (for synthetic datasets and utilities)
 - torch (if you want to run the PyTorch notebook)
-- pandas (optional, for data handling)
-- tqdm (optional, for progress bars)
 
 Example (pip):
 pip install -r requirements.txt
 
 If this repo doesn't include `requirements.txt`, you can install the basics with:
-pip install numpy matplotlib scikit-learn jupyterlab torch pandas tqdm
+pip install numpy jupyterlab torch
 
 Or create a conda environment:
 conda create -n nn-scratch python=3.9
 conda activate nn-scratch
-pip install numpy matplotlib scikit-learn jupyterlab torch pandas tqdm
+pip install numpy jupyterlab torch 
 
 ## Quick start — run the notebooks
 1. Clone the repository:
@@ -98,10 +92,7 @@ Notes:
 
 ## How the notebooks are organized
 A typical structure for the notebooks:
-- 00_introduction.ipynb — Overview and mathematical background
-- 01_nn_from_scratch.ipynb — NumPy implementation: layer classes, forward/backward, training loop
-- 02_nn_pytorch.ipynb — Equivalent model implemented using PyTorch: Dataset, DataLoader, model class, optimizer, training loop
-- 03_experiments_and_visualizations.ipynb — Visual comparisons: loss/accuracy curves, decision boundaries, hyperparameter effects
+- NeuralNetwork_Scratch.ipynb : Implemetation of y=2x prediction function using neural networks concept from scratch and then extending it to implement the same using the PyTorch.
 
 (Actual file names may vary — open the repository to find the exact notebook names.)
 
@@ -114,12 +105,9 @@ A typical structure for the notebooks:
 
 ## Results and visualizations
 The notebooks include visual output such as:
-- Training/validation loss and accuracy curves
-- Decision boundaries for 2D toy datasets
-- Weight histograms or weight-norm evolution plots
-- Confusion matrices for classification tasks (if applicable)
+- Training/validation loss and prediction value 
 
-Interpret these plots to understand underfitting/overfitting, learning rate effects, and model capacity.
+Interpret learning rate effects 
 
 ## Extending the project
 Ideas you can try:
