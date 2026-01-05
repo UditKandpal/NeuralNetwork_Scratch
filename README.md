@@ -99,8 +99,7 @@ A typical structure for the notebooks:
 ## Key learning points
 - Translating mathematical formulas (gradients) into efficient vectorized code
 - Building a training loop with mini-batches, shuffling, and evaluation
-- Understanding numerical stability issues (e.g., softmax + cross-entropy, avoiding overflow)
-- Seeing how PyTorch's autograd drastically reduces boilerplate for gradient calculation
+- Implementing the neural network from scratch for better understanding behind the working of Neural Networks
 - Practical debugging tips: gradient checking, printing norms, small-scale experiments
 
 ## Results and visualizations
@@ -135,21 +134,9 @@ If you open a PR, please:
 - PyTorch official tutorials: https://pytorch.org/tutorials/  
 - Stanford CS231n lectures (convolutional networks, backpropagation intuition)
 
-## License
-This repository is provided for educational purposes. If you'd like to use a permissive license, consider the MIT License:
-
-MIT License — see LICENSE file (if included).  
-(If you want a different license, update this section accordingly.)
-
 ## Author / Contact
 Udit Kandpal — (github: [UditKandpal](https://github.com/UditKandpal))  
 
 If you have questions or suggestions, please open an issue or submit a pull request. Thank you for checking out the project!
 
 ---
-
-If you'd like, I can:
-- generate a `requirements.txt` with pinned versions,
-- add a small example script to run training from the command line,
-- or produce a condensed `CONTRIBUTING.md` or `LICENSE` file (e.g., MIT).
-Tell me which one you want next and I'll prepare it.
